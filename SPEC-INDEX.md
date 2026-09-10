@@ -11,12 +11,13 @@ The Zeroth specification repository distinguishes **published drafts** from futu
 | `SPEC-0005` | Settlement Interface | Reserved | No | Not yet published |
 | `SPEC-0006` | Protected Ordering Interface | Reserved | No | Not yet published |
 | `SPEC-0007` | Post-Quantum Cryptographic Framework | Draft | No | Published draft |
-| `SPEC-0008` | Rollup / Appchain Evolution Architecture | Reserved | No | Not yet published |
+| `SPEC-0008` | Rollup / Appchain Evolution Architecture | Draft | No | Published draft |
 
 ## Published drafts
 
 - [`SPEC-0001 — Zeroth System Architecture`](SPEC-0001-system-architecture.md)
 - [`SPEC-0007 — Zeroth Post-Quantum Cryptographic Framework`](SPEC-0007-post-quantum-framework.md)
+- [`SPEC-0008 — Zeroth Rollup and Appchain Evolution Architecture`](SPEC-0008-rollup-appchain-evolution.md)
 
 ## Publication rules
 
