@@ -1,0 +1,5 @@
+name = "zeroth-specs"
+visibility = "public"
+classification = "PUBLIC-PROTOCOL"
+license = "CC-BY-4.0"
+description = "Canonical public protocol specifications for The Zeroth Protocol."
