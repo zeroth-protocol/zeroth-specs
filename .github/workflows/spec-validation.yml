@@ -1,0 +1,34 @@
+name: Zeroth Spec Validation
+
+on:
+  pull_request:
+    paths:
+      - 'SPEC-*.md'
+      - 'scripts/validate_specs.py'
+      - '.github/workflows/spec-validation.yml'
+  push:
+    branches:
+      - main
+    paths:
+      - 'SPEC-*.md'
+      - 'scripts/validate_specs.py'
+      - '.github/workflows/spec-validation.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: zeroth-spec-validation-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  spec-validation:
+    name: spec-validation
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # refs/tags/v4
+
+      - name: Validate public specifications
+        run: python3 scripts/validate_specs.py
